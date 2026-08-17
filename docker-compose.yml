@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  cryptofinder-agent:
+    build: .
+    container_name: enj_breakout_agent
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
